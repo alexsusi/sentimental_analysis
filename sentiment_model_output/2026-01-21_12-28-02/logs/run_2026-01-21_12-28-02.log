@@ -1,0 +1,88 @@
+2026-01-21 12:28:02,832 - INFO - ============================================================
+2026-01-21 12:28:02,832 - INFO - CONFIGURATION
+2026-01-21 12:28:02,833 - INFO - ============================================================
+2026-01-21 12:28:02,833 - INFO - Run ID: 2026-01-21_12-28-02
+2026-01-21 12:28:02,833 - INFO - Device: cpu
+2026-01-21 12:28:02,833 - INFO - FP16 training: False
+2026-01-21 12:28:02,833 - INFO - Model: distilbert-base-uncased
+2026-01-21 12:28:02,833 - INFO - Seed: 42
+2026-01-21 12:28:02,833 - INFO - Train samples: 2000
+2026-01-21 12:28:02,833 - INFO - Eval samples: 1000
+2026-01-21 12:28:02,833 - INFO - Validation split: 0.1
+2026-01-21 12:28:02,833 - INFO - Batch size: 16
+2026-01-21 12:28:02,833 - INFO - Max length: 256
+2026-01-21 12:28:02,833 - INFO - Learning rate: 2e-05
+2026-01-21 12:28:02,833 - INFO - Epochs (frozen): 2
+2026-01-21 12:28:02,833 - INFO - Epochs (unfrozen): 1
+2026-01-21 12:28:02,833 - INFO - ============================================================
+2026-01-21 12:28:02,833 - INFO - Loading IMDb dataset from stanfordnlp/imdb...
+2026-01-21 12:28:04,749 - INFO - Dataset sizes - Train: 1800, Val: 200, Test: 1000
+2026-01-21 12:28:04,750 - INFO - 
+Loading tokenizer and model: distilbert-base-uncased
+2026-01-21 12:28:05,717 - INFO - 
+Tokenizing datasets...
+2026-01-21 12:28:06,080 - INFO - 
+============================================================
+2026-01-21 12:28:06,080 - INFO - PHASE 1: Training classification head (base model frozen)
+2026-01-21 12:28:06,080 - INFO - ============================================================
+2026-01-21 12:28:06,080 - INFO - Trainable parameters: 592,130 / 66,955,010
+2026-01-21 12:38:13,648 - INFO - 
+Phase 1 Validation Metrics: {'eval_loss': 0.6686142086982727, 'eval_accuracy': 0.73, 'eval_precision': 0.8375, 'eval_recall': 0.6203703703703703, 'eval_f1': 0.7127659574468085, 'eval_runtime': 18.7289, 'eval_samples_per_second': 10.679, 'eval_steps_per_second': 0.694, 'epoch': 2.0}
+2026-01-21 12:38:13,649 - INFO - 
+============================================================
+2026-01-21 12:38:13,649 - INFO - PHASE 2: Fine-tuning entire model (all parameters unfrozen)
+2026-01-21 12:38:13,649 - INFO - ============================================================
+2026-01-21 12:38:13,649 - INFO - All parameters unfrozen for fine-tuning
+2026-01-21 12:49:10,252 - INFO - 
+Final Validation Metrics: {'eval_loss': 0.6263227462768555, 'eval_accuracy': 0.79, 'eval_precision': 0.8113207547169812, 'eval_recall': 0.7962962962962963, 'eval_f1': 0.8037383177570093, 'eval_runtime': 18.0453, 'eval_samples_per_second': 11.083, 'eval_steps_per_second': 0.72, 'epoch': 1.0}
+2026-01-21 12:49:10,252 - INFO - 
+============================================================
+2026-01-21 12:49:10,252 - INFO - FINAL EVALUATION ON TEST SET
+2026-01-21 12:49:10,252 - INFO - ============================================================
+2026-01-21 12:50:43,150 - INFO - 
+Test Set Metrics:
+2026-01-21 12:50:43,150 - INFO -   Accuracy:  0.8180
+2026-01-21 12:50:43,150 - INFO -   Precision: 0.7965
+2026-01-21 12:50:43,150 - INFO -   Recall:    0.8422
+2026-01-21 12:50:43,150 - INFO -   F1 Score:  0.8187
+2026-01-21 12:50:43,151 - INFO - 
+Saved training log history to sentiment_model_output/2026-01-21_12-28-02/reports/training_log_history_2026-01-21_12-28-02.json
+2026-01-21 12:50:43,151 - INFO - 
+Saving model and tokenizer to sentiment_model_output/2026-01-21_12-28-02/model
+2026-01-21 12:50:43,345 - INFO - ============================================================
+2026-01-21 12:50:43,345 - INFO - Running predictions:
+2026-01-21 12:50:43,345 - INFO - ============================================================
+2026-01-21 12:50:43,364 - INFO - 
+Review: "Incredible film. Just great!"
+2026-01-21 12:50:43,364 - INFO - Prediction: POSITIVE
+2026-01-21 12:50:43,364 - INFO - Positive probability: 0.5288
+2026-01-21 12:50:43,379 - INFO - 
+Review: "What a waste of time! I'd like to have back those 2 hours of my life."
+2026-01-21 12:50:43,379 - INFO - Prediction: NEGATIVE
+2026-01-21 12:50:43,379 - INFO - Positive probability: 0.4552
+2026-01-21 12:50:43,391 - INFO - 
+Review: "This movie was absolutely fantastic! Best thing I've seen all year."
+2026-01-21 12:50:43,391 - INFO - Prediction: POSITIVE
+2026-01-21 12:50:43,391 - INFO - Positive probability: 0.5540
+2026-01-21 12:50:43,402 - INFO - 
+Review: "Boring and predictable. Not worth watching."
+2026-01-21 12:50:43,402 - INFO - Prediction: NEGATIVE
+2026-01-21 12:50:43,402 - INFO - Positive probability: 0.4177
+2026-01-21 12:50:43,413 - INFO - 
+Review: "A masterpiece of cinema. Brilliant performances all around."
+2026-01-21 12:50:43,413 - INFO - Prediction: POSITIVE
+2026-01-21 12:50:43,413 - INFO - Positive probability: 0.5905
+2026-01-21 12:50:43,424 - INFO - 
+Review: "Terrible acting and awful plot. Complete disaster."
+2026-01-21 12:50:43,424 - INFO - Prediction: NEGATIVE
+2026-01-21 12:50:43,424 - INFO - Positive probability: 0.4426
+2026-01-21 12:50:43,424 - INFO - ============================================================
+2026-01-21 12:50:43,424 - INFO - 
+============================================================
+2026-01-21 12:50:43,424 - INFO - TRAINING COMPLETE
+2026-01-21 12:50:43,425 - INFO - ============================================================
+2026-01-21 12:50:43,425 - INFO - Output directory: sentiment_model_output/2026-01-21_12-28-02
+2026-01-21 12:50:43,425 - INFO - Model saved to: sentiment_model_output/2026-01-21_12-28-02/model
+2026-01-21 12:50:43,425 - INFO - Logs saved to: sentiment_model_output/2026-01-21_12-28-02/logs
+2026-01-21 12:50:43,425 - INFO - Reports saved to: sentiment_model_output/2026-01-21_12-28-02/reports
+2026-01-21 12:50:43,425 - INFO - ============================================================

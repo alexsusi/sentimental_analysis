@@ -1,0 +1,18 @@
+# Core Dependencies
+torch>=1.9.0
+transformers>=4.20.0
+datasets>=2.0.0
+scikit-learn>=1.0.0
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Configuration
+PyYAML>=6.0
+
+# Optional: For enhanced features
+# tensorboard>=2.8.0  # For experiment tracking
+# wandb>=0.12.0       # For cloud experiment tracking
+# accelerate>=0.12.0     # For distributed training

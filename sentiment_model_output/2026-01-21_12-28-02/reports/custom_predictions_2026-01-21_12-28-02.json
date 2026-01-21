@@ -1,0 +1,55 @@
+{
+  "run_id": "2026-01-21_12-28-02",
+  "model_name": "distilbert-base-uncased",
+  "timestamp": "2026-01-21T12:50:43.424539",
+  "predictions": [
+    {
+      "input_text": "Incredible film. Just great!",
+      "predicted_label": "POSITIVE",
+      "prob_positive": 0.5288,
+      "timestamp": "2026-01-21T12:50:43.364339",
+      "model_name": "distilbert-base-uncased",
+      "run_id": "2026-01-21_12-28-02"
+    },
+    {
+      "input_text": "What a waste of time! I'd like to have back those 2 hours of my life.",
+      "predicted_label": "NEGATIVE",
+      "prob_positive": 0.4552,
+      "timestamp": "2026-01-21T12:50:43.379092",
+      "model_name": "distilbert-base-uncased",
+      "run_id": "2026-01-21_12-28-02"
+    },
+    {
+      "input_text": "This movie was absolutely fantastic! Best thing I've seen all year.",
+      "predicted_label": "POSITIVE",
+      "prob_positive": 0.554,
+      "timestamp": "2026-01-21T12:50:43.391554",
+      "model_name": "distilbert-base-uncased",
+      "run_id": "2026-01-21_12-28-02"
+    },
+    {
+      "input_text": "Boring and predictable. Not worth watching.",
+      "predicted_label": "NEGATIVE",
+      "prob_positive": 0.4177,
+      "timestamp": "2026-01-21T12:50:43.402021",
+      "model_name": "distilbert-base-uncased",
+      "run_id": "2026-01-21_12-28-02"
+    },
+    {
+      "input_text": "A masterpiece of cinema. Brilliant performances all around.",
+      "predicted_label": "POSITIVE",
+      "prob_positive": 0.5905,
+      "timestamp": "2026-01-21T12:50:43.413280",
+      "model_name": "distilbert-base-uncased",
+      "run_id": "2026-01-21_12-28-02"
+    },
+    {
+      "input_text": "Terrible acting and awful plot. Complete disaster.",
+      "predicted_label": "NEGATIVE",
+      "prob_positive": 0.4426,
+      "timestamp": "2026-01-21T12:50:43.424142",
+      "model_name": "distilbert-base-uncased",
+      "run_id": "2026-01-21_12-28-02"
+    }
+  ]
+}

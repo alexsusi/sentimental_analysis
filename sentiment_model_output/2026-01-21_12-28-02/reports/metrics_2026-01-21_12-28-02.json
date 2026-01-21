@@ -1,0 +1,27 @@
+{
+  "run_id": "2026-01-21_12-28-02",
+  "model_name": "distilbert-base-uncased",
+  "timestamp": "2026-01-21T12:50:43.150773",
+  "validation_metrics": {
+    "eval_loss": 0.6263227462768555,
+    "eval_accuracy": 0.79,
+    "eval_precision": 0.8113207547169812,
+    "eval_recall": 0.7962962962962963,
+    "eval_f1": 0.8037383177570093,
+    "eval_runtime": 18.0453,
+    "eval_samples_per_second": 11.083,
+    "eval_steps_per_second": 0.72,
+    "epoch": 1.0
+  },
+  "test_metrics": {
+    "eval_loss": 0.6224972009658813,
+    "eval_accuracy": 0.818,
+    "eval_precision": 0.7965116279069767,
+    "eval_recall": 0.8422131147540983,
+    "eval_f1": 0.8187250996015937,
+    "eval_runtime": 92.8958,
+    "eval_samples_per_second": 10.765,
+    "eval_steps_per_second": 0.678,
+    "epoch": 1.0
+  }
+}

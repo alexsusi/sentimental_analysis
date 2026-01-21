@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "train_samples_requested": 2000,
+  "eval_samples_requested": 1000,
+  "val_ratio": 0.1,
+  "method": "shuffle with seed, then select first N samples",
+  "train_size": 1800,
+  "val_size": 200,
+  "test_size": 1000,
+  "train_range": "0-1799",
+  "val_range": "1800-1999",
+  "test_range": "0-999"
+}

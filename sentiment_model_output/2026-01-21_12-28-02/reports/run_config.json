@@ -1,0 +1,22 @@
+{
+  "run_id": "2026-01-21_12-28-02",
+  "mode": "train",
+  "timestamp": "2026-01-21T12:28:04.749962",
+  "model_name": "distilbert-base-uncased",
+  "seed": 42,
+  "device": "cpu",
+  "fp16_enabled": false,
+  "train_samples": 2000,
+  "eval_samples": 1000,
+  "val_split": 0.1,
+  "max_length": 256,
+  "batch_size": 16,
+  "num_epochs_frozen": 2,
+  "num_epochs_unfrozen": 1,
+  "learning_rate": 2e-05,
+  "dataset_sizes": {
+    "train": 1800,
+    "validation": 200,
+    "test": 1000
+  }
+}

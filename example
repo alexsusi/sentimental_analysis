@@ -1,0 +1,45 @@
+~/MA master !6 ?16 ······································································ 4s Py MA 14:09:45
+❯ python3 divers/fix_predict.py --model_path ./divers/sentiment_model_output/2026-01-21_12-28-02/model --text "Good acting. Bad story" 
+2026-01-21 15:49:28,198 - INFO - Loading model from: divers/sentiment_model_output/2026-01-21_12-28-02/model
+2026-01-21 15:49:28,370 - INFO - Model loaded successfully on device: cpu
+2026-01-21 15:49:28,370 - INFO - Making predictions for 1 texts...
+2026-01-21 15:49:28,392 - INFO - Review: "Good acting. Bad story"
+2026-01-21 15:49:28,393 - INFO - Prediction: NEGATIVE (confidence: 0.5167)
+
+=== PREDICTION RESULTS ===
+Text: Good acting. Bad story
+Prediction: NEGATIVE
+Positive Probability: 0.4833
+Confidence: 0.5167
+----------------------------------------
+2026-01-21 15:49:28,393 - INFO - Prediction completed successfully!
+~/MA master !6 ?19 ······································································ 4s Py MA 15:49:28
+❯ python3 divers/fix_predict.py --model_path ./divers/sentiment_model_output/2026-01-21_12-28-02/model --text "Bad acting. Good story"
+2026-01-21 15:49:54,169 - INFO - Loading model from: divers/sentiment_model_output/2026-01-21_12-28-02/model
+2026-01-21 15:49:54,339 - INFO - Model loaded successfully on device: cpu
+2026-01-21 15:49:54,339 - INFO - Making predictions for 1 texts...
+2026-01-21 15:49:54,358 - INFO - Review: "Bad acting. Good story"
+2026-01-21 15:49:54,358 - INFO - Prediction: NEGATIVE (confidence: 0.5371)
+
+=== PREDICTION RESULTS ===
+Text: Bad acting. Good story
+Prediction: NEGATIVE
+Positive Probability: 0.4629
+Confidence: 0.5371
+----------------------------------------
+2026-01-21 15:49:54,358 - INFO - Prediction completed successfully!
+~/MA master !6 ?19 ······································································ 4s Py MA 15:49:54
+❯ python3 divers/fix_predict.py --model_path ./divers/sentiment_model_output/2026-01-21_12-28-02/model --text "Amazing"               
+2026-01-21 15:52:25,363 - INFO - Loading model from: divers/sentiment_model_output/2026-01-21_12-28-02/model
+2026-01-21 15:52:25,533 - INFO - Model loaded successfully on device: cpu
+2026-01-21 15:52:25,533 - INFO - Making predictions for 1 texts...
+2026-01-21 15:52:25,554 - INFO - Review: "Amazing"
+2026-01-21 15:52:25,554 - INFO - Prediction: POSITIVE (confidence: 0.5193)
+
+=== PREDICTION RESULTS ===
+Text: Amazing
+Prediction: POSITIVE
+Positive Probability: 0.5193
+Confidence: 0.5193
+----------------------------------------
+2026-01-21 15:52:25,554 - INFO - Prediction completed successfully!
